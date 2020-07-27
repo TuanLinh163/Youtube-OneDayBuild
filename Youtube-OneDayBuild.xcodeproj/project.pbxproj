@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CC047A6B24C94F93006924B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC047A6A24C94F93006924B3 /* Constants.swift */; };
 		CC3CD31A24CEB63C00BE75E8 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3CD31924CEB63C00BE75E8 /* CacheManager.swift */; };
+		CC3CD31C24CEBCF900BE75E8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3CD31B24CEBCF900BE75E8 /* DetailViewController.swift */; };
+		CC3CD31F24CEC97D00BE75E8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3CD31E24CEC97D00BE75E8 /* WebKit.framework */; };
 		CC5B392424C9710E00F96FCC /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B392324C9710E00F96FCC /* Videos.swift */; };
 		CC5B392624C9716400F96FCC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B392524C9716400F96FCC /* Model.swift */; };
 		CC6ED1A424C92E7300F88E1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6ED1A324C92E7300F88E1E /* AppDelegate.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		CC047A6A24C94F93006924B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
 		CC3CD31924CEB63C00BE75E8 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		CC3CD31B24CEBCF900BE75E8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CC3CD31E24CEC97D00BE75E8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CC5B392324C9710E00F96FCC /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
 		CC5B392524C9716400F96FCC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CC6ED1A024C92E7300F88E1E /* Youtube-OneDayBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youtube-OneDayBuild.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,17 +47,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3CD31F24CEC97D00BE75E8 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC3CD31D24CEC97D00BE75E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC3CD31E24CEC97D00BE75E8 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CC6ED19724C92E7300F88E1E = {
 			isa = PBXGroup;
 			children = (
 				CC6ED1A224C92E7300F88E1E /* Youtube-OneDayBuild */,
 				CC6ED1A124C92E7300F88E1E /* Products */,
+				CC3CD31D24CEC97D00BE75E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				CC6ED1A724C92E7300F88E1E /* ViewController.swift */,
+				CC3CD31B24CEBCF900BE75E8 /* DetailViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -203,6 +218,7 @@
 				CC5B392624C9716400F96FCC /* Model.swift in Sources */,
 				CC5B392424C9710E00F96FCC /* Videos.swift in Sources */,
 				CCF2729E24CE8AA800430407 /* VideoTableViewCell.swift in Sources */,
+				CC3CD31C24CEBCF900BE75E8 /* DetailViewController.swift in Sources */,
 				CC047A6B24C94F93006924B3 /* Constants.swift in Sources */,
 				CCCE297924C99C6D00B16ED0 /* Response.swift in Sources */,
 			);

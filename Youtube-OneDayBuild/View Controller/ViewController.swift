@@ -52,13 +52,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let video = self.videos[indexPath.row]
         cell.setCell(video)
         
-        
         // Return the cell
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
           
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // confirm that a video was selected
+        guard tableView.indexPathForSelectedRow != nil else {
+            return
+        }
+        
+        // get the reference for the video that was tapped on
+        let selectedVideo = videos[tableView.indexPathForSelectedRow!.row]
+        
+        // get the reference for the detail view controller
+        let detailVC = segue.destination as! DetailViewController
+        
+        // set the video property of the detail view controller
+        detailVC.video = selectedVideo
+        
     }
 }
 
